@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import './snake.css'
 const Snake = (props) => {
     return (
         <div>

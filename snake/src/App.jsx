@@ -79,7 +79,7 @@ function App() {
     }
   }, [state.direction, state.snakePosition, state.route]);
 
-  
+
   useEffect(() => {
     const interval = setInterval(() => moveSnake(), state.speed);
 
@@ -110,7 +110,7 @@ function App() {
     let head = state.snakePosition[state.snakePosition.length - 1];
     let food = state.food;
     if (head[0] === food[0] && head[1] === food[1]) {
-      setState((prevState) => ({ ...prevState, food: getFood(),score: state.score + 1 }));
+      setState((prevState) => ({ ...prevState, food: getFood(), score: state.score + 1 }));
       increaseSnake();
       increaseSpeed();
     }
@@ -216,7 +216,7 @@ function App() {
             onRight={onRight}
             onUp={onUp}
           />
-          <Score currentScore = {state.score}/>
+          <Score currentScore={state.score} />
         </div>
       )}
     </>
