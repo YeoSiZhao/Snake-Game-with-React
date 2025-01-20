@@ -1,0 +1,47 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Press Start 2P', cursive; /* Retro game font */
+    text-align: center;
+  }
+  
+  .menu h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 20px;
+  }
+  
+  .menu p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .menu button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    background: #00c851;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu button:hover {
+    transform: scale(1.1);
+    background: #007e33;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .menu button:active {
+    transform: scale(1.05);
+    background: #005f24;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
